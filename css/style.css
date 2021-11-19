@@ -1,0 +1,382 @@
+:root {
+  --colorgreen: #009000;
+  --colorwhite: #fff;
+  --colorlightgrey: #dcdcdc;
+  --colorblue: blue;
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .navbar {
+  width: 100%;
+  height: 40px;
+  background-color: var(--colorgreen);
+  display: flex;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-size: 20px;
+  display: flex;
+}
+
+.logo .span {
+  color: var(--colorwhite);
+}
+
+.first {
+  background-color: var(--colorgreen);
+}
+
+.first img {
+  width: 100%;
+  height: 100%;
+}
+
+.HTO {
+  background-color: var(--colorgreen);
+  display: flex;
+  color: var(--colorwhite);
+}
+
+.HTO .text {
+  width: 800px;
+  justify-content: center;
+  margin: 10px 50px 30px 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .HTO {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .HTO {
+    font-size: 20px;
+  }
+}
+
+.listItems {
+  width: 100%;
+}
+
+.listItems .mbutton {
+  width: 70px;
+  margin: 15px 30px;
+  padding: 3px;
+  background-color: black;
+  color: var(--colorwhite);
+  border-radius: 5%;
+}
+
+.listItems .item {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-left: -25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.listItems .item .imgItem img {
+  width: 200px;
+  height: 190px;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3%;
+  box-shadow: var(--box-shadow);
+}
+
+@media only screen and (max-width: 500px) {
+  .listItems {
+    margin: 5px 0px 60px 0px;
+  }
+  .listItems .mbutton {
+    margin-bottom: 5px;
+  }
+  .listItems .item {
+    width: 100%;
+    height: 100px;
+    margin-left: -60px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .listItems .item .imgItem img {
+    width: 120px;
+    height: 120px;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 3%;
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.description .desc1 {
+  margin-left: -180px;
+  margin-top: 15px;
+}
+
+.description .desc1 ul {
+  display: flex;
+  align-items: center;
+}
+
+.description .desc1 ul li {
+  margin-right: 15px;
+  list-style: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .description .desc1 {
+    margin: 20px 30px 10px 10px;
+    font-size: 13px;
+  }
+  .description .desc1 ul li {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .description .desc1 {
+    margin: 15px 25px 10px 20px;
+    font-size: 20px;
+  }
+  .description .desc1 ul li {
+    margin-right: 20px;
+  }
+}
+
+.NOL {
+  color: var(--colorgreen);
+  margin-right: 20px;
+}
+
+.review {
+  color: var(--colorblue);
+  text-decoration: none;
+}
+
+.description .desc2 {
+  margin-left: -180px;
+  margin-top: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.description .desc2 p {
+  margin-right: 500px;
+}
+
+.description .desc2 .btn {
+  width: fit-content;
+  background-color: var(--colorgreen);
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 10%;
+  color: var(--colorwhite);
+}
+
+@media only screen and (max-width: 500px) {
+  .description .desc2 {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 13px;
+  }
+  .description .desc2 p {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .description .desc2 {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 13px;
+  }
+  .description .desc2 p {
+    margin-right: 50px;
+  }
+}
+
+.checkout {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: var(--box-shadow);
+}
+
+.checkout .btn2 {
+  width: fit-content;
+  background-color: var(--colorgreen);
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 3%;
+  color: var(--colorwhite);
+}
+
+@media only screen and (max-width: 500px) {
+  .checkout {
+    width: 100%;
+    height: 50px;
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .checkout {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 500;
+}
+
+.popup {
+  padding: 10px;
+  background: white;
+  width: 400px;
+  height: 520px;
+  margin: 80px auto;
+}
+
+.times {
+  margin-left: 360px;
+  margin-bottom: 30px;
+}
+
+.popup h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.popup p {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  padding: 15px;
+  text-align: center;
+}
+
+.popup ul {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.popup ul li {
+  list-style: none;
+  font-size: 10px;
+}
+
+.popup ul li button {
+  border: none;
+  color: white;
+  padding: 3px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.popup form input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 12px;
+}
+
+.popup form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 12px;
+}
+
+.popup form input .send {
+  width: 30%;
+}
+
+.popup .ul-review {
+  display: list-item;
+}
+
+.popup .ul-review li {
+  margin-top: 20px;
+}
+
+.popup .ul-review button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3px 7px;
+  margin-left: 10px;
+}
+
+.popup .ul-review button i {
+  height: 14px;
+  margin-right: 5px;
+}
+
+.popup .ul-review button .likerate {
+  font-size: 7px;
+}
+
+.popup ul li .reviewItem h2 {
+  margin-left: -300px;
+  margin-top: 10px;
+}
+
+.popup ul li .reviewItem p {
+  margin-left: -80px;
+}
